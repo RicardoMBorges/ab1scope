@@ -32,12 +32,19 @@ Como Usar
 ## 📁 Directory Structure
 main/
 │
+
 ├── your_ab1_files_directory/
+
 │ ├── sample1.ab1
+
 │ ├── sample2.ab1
+
 │ ├── ...
+
 | └── ab1scope_notebook.ipynb # Interactive Jupyter interface
+
 ├── ab1scope.py # Core module
+
 └── README.md
 
 
