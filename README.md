@@ -67,3 +67,24 @@ O que o ab1scope oferece:
 - Análise bidirecional combinada de arquivos forward/reverse
 
     Recomendação: Para aplicações como análise de eficiência de edição por CRISPR, detecção de heteroplasmia mitocondrial ou epigenética quantitativa, sugerimos ferramentas específicas como EditR, TIDE, ICE, BEAT, entre outras.
+
+### 🛑 Limitações e Considerações
+
+O ab1scope foi projetado para análise interativa e curadoria qualitativa de dados de sequenciamento Sanger. Embora seja uma ferramenta poderosa para inspeção visual, ensino e diagnóstico básico de qualidade, ele não substitui métodos quantitativos rigorosos em determinadas aplicações.
+
+
+#### ❌ Limitações atuais:
+
+- Não estima proporções alélicas ou variantes com precisão quantitativa.
+Ideal para detectar ambiguidade e dominância, mas não calcula frações de alelos (ex.: 70% A, 30% G) como modelos estatísticos fazem.
+
+- Não corrige efeitos de fluorescência ou sobreposição espectral.
+Os sinais são tratados diretamente a partir das intensidades brutas ou suavizadas, sem deconvolução de canais.
+
+- Não integra arquivos forward/reverse nem realiza montagem.
+    Cada .ab1 é processado individualmente; não há sobreposição de leituras ou geração de consenso multiarquivo.
+
+- Não detecta ou classifica edições CRISPR, SNPs, ou inserções/deleções com precisão de bioinformática.
+    Há uma função básica de detecção de ambiguidades e indels visuais, mas sem inferência estatística de mutações.
+
+- Não substitui ferramentas específicas como TIDE, ICE, EditR, BEAT.
