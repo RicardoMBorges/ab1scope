@@ -40,3 +40,30 @@ main/
 ├── ab1scope.py # Core module
 └── README.md
 
+
+### Comparação com Métodos Quantitativos de Proporção de Cópias
+
+Embora o ab1scope ofereça uma plataforma interativa robusta para análise de qualidade e extração de sequências a partir de arquivos .ab1, seu foco está em curadoria manual assistida, visualização e detecção qualitativa de sinais dominantes. Ele não realiza estimativas quantitativas precisas de proporções de variantes (como SNPs ou edições CRISPR), como proposto em metodologias avançadas descritas por Seroussi (2021).
+O que o ab1scope oferece:
+
+- Interface Jupyter interativa com ajustes em tempo real
+
+- Diagnóstico visual e exportação de sequências filtradas (FASTA/CSV)
+
+- Análise em lote com rastreamento de parâmetros
+
+- Identificação de ambiguidade por dominância e codificação IUPAC
+
+- Ideal para ensino, controle de qualidade, curadoria e pré-processamento
+
+### O que não é escopo do ab1scope:
+
+- Inferência quantitativa precisa de proporções de cópias
+
+- Correção de distorções sistemáticas de fluorescência
+
+- Integração com modelos de edição genômica (e.g., TIDE, ICE)
+
+- Análise bidirecional combinada de arquivos forward/reverse
+
+    Recomendação: Para aplicações como análise de eficiência de edição por CRISPR, detecção de heteroplasmia mitocondrial ou epigenética quantitativa, sugerimos ferramentas específicas como EditR, TIDE, ICE, BEAT, entre outras.
